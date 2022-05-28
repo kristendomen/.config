@@ -1,0 +1,31 @@
+@-moz-document url-prefix("https://www.youtube.com/watch?v") {
+
+      #primary.style-scope.ytd-watch-flexy {
+          margin-bottom: 5rem;
+          }
+
+
+      ytd-watch-next-secondary-results-renderer.style-scope.ytd-watch-flexy,
+      #secondary {
+          display: none;
+          }
+
+      video, .html5-video-container {
+          width: 100%!important;
+          height: 100%!important;
+          }
+
+      .ytp-chrome-bottom {
+          left: 50%!important;
+          transform: translateX(-50%)!important;
+          }
+}
+
+@-moz-document url-prefix("https://www.youtube.com/results?search_query") {
+
+      #dismissible,
+          ytd-shelf-renderer.style-scope.ytd-item-section-renderer,
+          ytd-horizontal-card-list-renderer.style-scope.ytd-item-section-renderer {
+              display: none;
+              }
+}
